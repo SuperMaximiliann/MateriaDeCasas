@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="author" content="Marano Maximo Gabriel" charset="UTF-8" />
+    <title>Formulario Avanzado</title>
+</head>
+
+<body>
+    <header>
+        <h1>Informacion sobre el porducto</h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Datos basicos</legend>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <br>
+            <label for="descripcion">Descripcion</label>
+            <br>
+            <textarea name="descripcion" id="descripcion"></textarea>
+            <br>
+            Foto
+            <input type="file" id="foto" accept="image/*">
+            <br>
+            <label for="contador_de_visitas">Añadir contador de visitas</label>
+            <input type="checkbox" name="contador_de_visitas" id="contador_de_visitas">
+        </fieldset>
+        <fieldset>
+            <legend>Datos economicos</legend>
+            <p>Precio 
+                <input type="number" name="precio" id="precio" placeholder="precio"> $   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Impuestos 
+                <Select id="impuestos" name="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+                </Select>
+            </p>
+            <input type="radio" name="Promocion" id="Ninguno" value="Ninguno">
+            <label for="Ninguno">Ninguno</label>
+            <br>
+            <input type="radio" name="Promocion" id="Trasporte gratuito" 
+            value="Trasporte gratuito">
+            <label for="Trasporte gratuito">Transporte gratuito</label>
+            <br>
+            <input type="radio" name="Promocion" id="Descuento 5%" value="Descuento 5%">
+            <label for="Descuento 5%">Descuento 5%</label>
+            <br>
+        </fieldset>
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar datos" />
+    </form>
+</body>
+
+</html>

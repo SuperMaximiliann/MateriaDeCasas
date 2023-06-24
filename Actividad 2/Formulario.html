@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="author" content="Marano Maximo Gabriel" charset="UTF-8" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h1>Rellena tu CV</h1>
+    </header>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Escribe tu nombre" maxlength="30" name="nombre" id="nombre" /><br />
+        <label for="apellido">Apellido</label>
+        <input type="text" placeholder="Escribe tu apellido" maxlength="80" name="apellido" id="apellido" /><br />
+        <label for="contraseña">Contraseña</label>
+        <input type="password" placeholder="Escribe tu contraseña" maxlength="10" name="contraseña"
+            id="contraseña" /><br />
+        <label for="DNI">DNI</label>
+        <input type="text" placeholder="Escribe tu DNI" maxlength="8" name="DNI" id="DNI" />
+        <br />
+        <input type="radio" name="genero" id="Hombre" value="Hombre" />
+        <label for="Hombre">Hombre</label>
+        <input type="radio" name="genero" id="Mujer" value="Mujer" />
+        <label for="Mujer">Mujer</label>
+        <br>
+        Incluir mi foto
+        <input type="file" id="foto" accept="image/*">
+
+        <br>
+        <input type="checkbox" name="Suscripcion" id="Suscripcion" value="Suscripcion">
+        <label for="Suscripcion">Suscribirme al boletin de novedades</label>
+        <br>
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar datos">
+
+    </form>
+</body>
+
+</html>

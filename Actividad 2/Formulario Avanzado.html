@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta name="author" content="Marano Maximo Gabriel" charset="UTF-8" />
+    <title>Formulario Avanzado</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Rellena tu CV</h1>
+    </header>
+    <fieldset>
+      <legend>Datos</legend>
+      <form>
+        <label for="provincia">Provincia</label>
+        <br />
+        <select name="provincia" id="provincia">
+          <option value="">Selecciona una provincia</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="Catamarca">Catamarca</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Chubut">Chubut</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Entre Ríos">Entre Ríos</option>
+          <option value="Formosa">Formosa</option>
+          <option value="Jujuy">Jujuy</option>
+          <option value="La Pampa">La Pampa</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Misiones">Misiones</option>
+          <option value="Neuquén">Neuquén</option>
+          <option value="Río Negro">Río Negro</option>
+          <option value="Salta">Salta</option>
+          <option value="San Juan">San Juan</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Santiago del Estero">Santiago del Estero</option>
+          <option value="Tierra del Fuego">Tierra del Fuego</option>
+          <option value="Tucumán">Tucumán</option>
+        </select>
+        <br />
+        <label for="fecha_dia">Fecha de nacimiento</label>
+        <br />
+        <input
+          type="number"
+          maxlength="2"
+          placeholder="Dia"
+          name="fecha_dia"
+          id="fecha_dia"
+        />
+        de
+        <select id="fecha_mes" name="fecha_mes">
+          <option value="1">Enero</option>
+          <option value="2">Febrero</option>
+          <option value="3">Marzo</option>
+          <option value="4">Abril</option>
+          <option value="5">Mayo</option>
+          <option value="6">Junio</option>
+          <option value="7">Julio</option>
+          <option value="8">Agosto</option>
+          <option value="9">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select>
+        de
+        <input
+          type="number"
+          maxlength="4"
+          placeholder="año"
+          id="fecha_ano"
+          name="fecha_ano"
+        />
+        <br />
+        <label for="opciones">Temas de interes</label>
+        <br />
+        <select name="opciones" multiple id="opciones">
+          <option value="opcion1">Administracion de bases de datos</option>
+          <option value="opcion2">Analisis y programacion</option>
+          <option value="opcion3">Arquitectura</option>
+          <option value="opcion4">Calidad</option>
+          <option value="opcion5">ERP, CRM, Bussines Intelligence</option>
+        </select>
+        <br />
+        <input type="submit" value="Guardar cambios" />
+        <input type="reset" value="Borrar datos" />
+      </form>
+    </fieldset>
+  </body>
+</html>
