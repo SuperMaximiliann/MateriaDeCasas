@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<script type="text/javascript">
+
+function calculoIMC() {
+    var peso = parseFloat(prompt("Ingrese peso (kg)"));
+    var altura = parseFloat(prompt("Ingrese altura (m)"));
+
+    var IMC = peso / (altura * altura);
+
+    if (IMC > 30) {
+        alert("Obesidad grado 2: " + IMC.toFixed(2));
+    } else if (IMC > 25) {
+        alert("Obesidad grado 1: " + IMC.toFixed(2));
+    } else if (IMC > 17.9) {
+        alert("Peso saludable: " + IMC.toFixed(2));
+    } else {
+        alert("Bajo peso: " + IMC.toFixed(2));
+    }
+}
+
+</script>
+
+<input type="button" onclick="calculoIMC()" value="Calcular IMC"/>
+<br>
+<a href="../index.html">Volver</a>
+</body>
+</html>
